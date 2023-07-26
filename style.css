@@ -1,0 +1,192 @@
+:root {
+    --gri: rgb(206, 205, 205);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+    
+}
+
+body {
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    margin-top: 2rem;
+    cursor: url('./img/rocket.png'), auto !important;
+    min-height: 100vh;
+    animation: giris 1000ms linear 0s 1 forwards ;
+    
+}
+
+@keyframes giris {
+    0%  {scale: 0;}
+    100% {scale: 1;}
+}
+
+
+
+#girislerDiv {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    height: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+  
+    margin: 2rem auto;
+}
+
+#girislerDiv input {
+    padding-left: .5rem;
+    font-weight: bolder;
+    background-color: var(--gri);
+    border-radius: 7px;
+    font-family: inherit;
+    cursor: inherit;
+    width: 20vw;
+    font-size: larger;
+
+}
+
+#girislerDiv input:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+#girislerDiv select {
+    padding: 0px 1rem;
+    font-weight: bolder;
+    background-color: var(--gri);
+    font-family: inherit;
+    cursor: inherit;
+    width: 20vw;
+    border-radius: 7px;
+    font-size: larger;
+}
+
+option {
+    font-size: initial;
+    
+}
+
+
+
+#girislerDiv button {
+    font-weight: bolder;
+    font-size: larger;
+    background-color: #359769;
+    font-family: inherit;
+    cursor: inherit;
+    width: 20vw;
+    border-radius: 7px;
+    color: #ffffff;
+    letter-spacing: 5px;
+    border: none;
+}
+
+#girislerDiv button:hover {
+    transform: scale(1.04);
+    transition: all 50ms ease-in-out ;
+} 
+
+#girislerDiv button:active {
+    /* transform: scale(.98); */
+    translate: 2px 2px;
+}
+
+#HataMsg {
+    color: rgb(219, 23, 23);
+    font-size: large;
+    font-weight: 900;
+    margin: 1rem;
+    letter-spacing: 5px;
+}
+
+.sonuclarOutherContainer {
+    background-color: rgba(255, 248, 220, 0.219);
+    padding: 2rem 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sonuclarOutherContainer img {
+    margin: 1rem;
+}
+
+.sonucDegerleriContainer {
+    background-color: rgba(30, 30, 30, 0.24);  
+    margin: 1rem;
+    border-radius: 10px;
+    color: rgb(209, 208, 208);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sonucYazisi {
+    display: flex;
+    flex-direction: column;      
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: larger;
+    font-weight: 800;
+    
+}
+
+#gezegenID {
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+.agirlikDegeri {
+    background-color: rgba(122, 121, 120, 0.363);
+    margin: 1rem;
+    padding: 2rem;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    font-size: larger;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (width < 650px) {
+    h1 {
+        font-size: medium;
+    }
+
+    #girislerDiv {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        height: auto
+    }
+
+    #girislerDiv input,
+    #girislerDiv select,
+    #girislerDiv button
+     {
+        height: 2rem;
+        line-height: 2rem;
+        width: 100%;        
+    }
+
+    .sonuclarOutherContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #gezegenFoto {
+        margin: 2rem 5rem ;   
+     }
+
+}

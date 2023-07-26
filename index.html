@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Planets</title>
+</head>
+
+<body background="./img/planets/galaxy.gif">
+    <div class="bodyContainer">
+
+
+        <h1>Gezegenlerde Nesnelerin Ağırlığını Hesaplayalım </h1>
+        <div id="girislerDiv">
+            <input type="number" id="inputID" placeholder="Değer giriniz" />
+
+            <select name="gezegenDropdownName" id="gezegenDropdown" onchange="handleOptionChange(this)">
+                <option value="Seciniz">Seçiniz</option>
+                <option value="Merkur">Merkür</option>
+                <option value="Venus">Venüs</option>
+                <option value="Dunya">Dünya</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jüpiter</option>
+                <option value="Saturn">Satürn</option>
+                <option value="Uranus">Uranüs</option>
+                <option value="Neptun">Neptün</option>
+                <option value="Pluton">Pluton</option>
+                <option value="Ay">Ay</option>
+            </select>
+
+            <button id="hesaplaButton" onclick="hesaplaOnClick()">HESAPLA</button>
+        </div>
+
+        <p id="HataMsg"> </p>
+        <div class="sonuclarOutherContainer">
+            <img id="gezegenFoto" src="./img/planets/Dunya.png" alt="" height="350px" width="350px" srcset="">
+            <div class="sonucDegerleriContainer">
+                <div class="sonucYazisi">
+                    <span id="gezegenID">Dünya</span>
+                    <span>gezegeninde cismin ağırlığı;</span>
+                </div>
+                <div class="agirlikDegeri">
+                    AĞIRLIK DEĞERİ
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
